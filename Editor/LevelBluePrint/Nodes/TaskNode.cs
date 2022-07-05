@@ -59,6 +59,11 @@ namespace LevelBluePrintUtil
 		// Return the correct value of an output port when requested
 		public override object GetValue(NodePort port)
 		{
+            if (port.fieldName == "next")
+            {
+				//next = GetInputValue<Node>("pre", pre);
+				return this;
+            }
 			return null; // Replace this
 		}
 	}

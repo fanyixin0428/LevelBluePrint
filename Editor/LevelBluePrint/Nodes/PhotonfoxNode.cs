@@ -58,7 +58,7 @@ namespace LevelBluePrintUtil.Hidden
         }
 
         // 获取上个链接节点
-        public PhotonfoxNode GetLast()
+        public PhotonfoxNode GetPreNode()
         {
             var lstPort = Ports.Where(p => p.IsInput)?.First();
             if (lstPort != null && lstPort.ConnectionCount > 0)

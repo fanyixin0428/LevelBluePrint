@@ -98,32 +98,6 @@ namespace LevelBluePrintUtil
             }
         }
 
-        //刷新剧情的序号
-        //public void UpdateScenarioNode()
-        //{
-        //    int scenarioCount = 0;
-        //    // reset ScenarioNode id
-        //    for (int i = 0; i < nodes.Count(); i++)
-        //    {
-        //        var pfNode = (nodes[i] as PhotonfoxNode);
-        //        if (pfNode == null)
-        //        {
-        //            continue;
-        //        }
-        //        //根据LevelGragh填入的数据，初始化一些剧情节点的字段。
-        //        if (pfNode.GetType().Name == "ScenarioNode")
-        //        {
-        //            scenarioCount++;
-        //            var scenarioNode = pfNode as ScenarioNode;
-
-        //            scenarioNode.nodeScenarioIndex = scenarioCount;
-        //            Debug.Log(scenarioNode.property.scenarioId);
-               
-        //        }
-        //    }
-        //}
-
-
         /// <summary>
         /// 添加节点时
         /// </summary>

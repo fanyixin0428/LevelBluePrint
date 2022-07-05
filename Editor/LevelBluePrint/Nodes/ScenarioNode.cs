@@ -226,28 +226,44 @@ namespace LevelBluePrintUtil
 			base.Init();
 		}
 
-		// Return the correct value of an output port when requested
-		public override object GetValue(NodePort port)
+		public void GetPreNodeTriggerTaskId(TaskNode taskNode) 
 		{
+			scenarioTrigger = ScenarioTrigger.TASK_COMPLETE;
+			configContent = Convert.ToString(taskNode.property.taskId);
+			ResetScenarioNodeTable();
+			property.taskId = taskNode.property.taskId;
 
+		}
+		
+		//自动获取上一个任务节点的内容,并填入剧情节点
+		public void testEntryTaskId()
+        {
+			this.pre = GetPreNode();
+
+			if (pre is TaskNode)
+			{
+				TaskNode preTaskNode = pre as TaskNode;
+				GetPreNodeTriggerTaskId(preTaskNode);
+
+			}
+
+		}
+
+	// Return the correct value of an output port when requested
+	public override object GetValue(NodePort port)
+        {
+            if (port.fieldName == "next")
+            {
+				Debug.Log("next");
+				testEntryTaskId();
+				return this;
+
+			}
 
 			return null; // Replace this
 		}
 
 
-		//[Button("测试弹窗", ButtonSizes.Large), GUIColor(0.95f, 0.3f, 0.3f)]
-		//public void ShowDialogBox()
-		//{
-		//	CloudUnlockTriggerBox.Show("这是一个测试！",
-		//		() => {
-		//			Debug.Log("确认");
-		//		},
-		//		() => {
-		//			Debug.LogWarning("直接关闭");
-		//		});
-		//}
-
-		//写各种样式的弹窗
 
 	}
 }
