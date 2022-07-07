@@ -16,8 +16,7 @@ namespace LevelBluePrintUtil
 	[NodeTintAttribute("#1a6a9c"), NodeWidthAttribute(280)]
 	public class ScenarioNode : PhotonfoxNode
 	{
-		[ReadOnly]
-		public int id;
+
 
 		[LabelText("剧情编号")]
 		public int nodeScenarioIndex;

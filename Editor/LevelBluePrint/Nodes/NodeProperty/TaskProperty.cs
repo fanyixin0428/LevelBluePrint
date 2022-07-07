@@ -12,6 +12,8 @@ namespace LevelBluePrintUtil
         [LabelText("任务简述")]
         public string taskComment;
 
+
+
         [LabelText("合并标签")]
         [ValueDropdown("MergeTag")]
         public string mergeTag;
