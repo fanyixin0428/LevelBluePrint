@@ -22,5 +22,10 @@ public class BasicProperty
 
     [LabelText("关卡ID")]
     public int mapId;
+
+    [ValueDropdown("LevelType")]
+    [LabelText("关卡类型")]
+    public string levelType;
+    public List<string> LevelType = new List<string>() { "home_story", "main_story", "side_story", "event_story" };
 }
 

@@ -27,8 +27,8 @@ namespace LevelBluePrintUtil.Hidden {
         {
 
             LevelGraph levelGraph = this.graph as LevelGraph;
-            scenarioId = levelGraph.scenarioId;
-            taskId = levelGraph.taskId;
+            scenarioId = levelGraph.scenarioStartId;
+            taskId = levelGraph.taskStartId;
 
             levelId = levelGraph.basic.mapId;
             levelName = levelGraph.basic.name;

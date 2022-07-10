@@ -270,11 +270,11 @@ namespace LevelBluePrintUtil
 		}
 
 		/// <summary>
-		/// 可能不是必须的一些属性
+		/// 
 		/// </summary>
-		[LabelText("基本属性")] public BasicProperty basic;
 		[FoldoutGroup("任务表属性"), HideLabel, LabelWidth(140)] public TaskProperty property;
 		
+		//初始化数值的按钮
 		[Button("初始化数值",ButtonSizes.Medium)]
 		private void InitializationProperty()
 		{
@@ -296,12 +296,28 @@ namespace LevelBluePrintUtil
 
 		}
 
-		
+		public TaskNode() : base()
+		{
+			property = new TaskProperty();
+			property.mergeTag = "新增";
+			property.csgen = "[\"default\"]";
+			property.id = 0;
+			property.taskId = 0;
+			property.relateMapId = 0;
+			property.taskOrder = 0;
+			property.taskType = "event_story";
+
+			property.entry = TaskEntry.COMMON;
+			property.mapGroupInfo = "{}";
+			property.targetIconType = "[]";
+			property.giftBuilding = "[]";
+			property.giftBuildingIcon = "[]";
+		}
 
 
 
-			
-		
+
+
 		// Use this for initialization
 		protected override void Init()
 		{

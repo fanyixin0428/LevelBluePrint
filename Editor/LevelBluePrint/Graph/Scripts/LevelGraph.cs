@@ -29,13 +29,17 @@ namespace LevelBluePrintUtil
 
         //剧情/任务节点，用于自动生成剧情/任务节点ID
         [LabelText("剧情起始ID")]
-        public int scenarioId;
+        public int scenarioStartId;
 
         [LabelText("任务起始ID")]
-        public int taskId;
+        public int taskStartId;
 
         [HideInInspector]
         public int scenarioIndex = 0;
+        [HideInInspector]
+        public int taskUniqueIDIndex = 0;
+        [HideInInspector]
+        public int taskIDIndex = 0;
 
 
         #region Setting
@@ -99,7 +103,7 @@ namespace LevelBluePrintUtil
         }
 
         /// <summary>
-        /// 添加节点时
+        /// 添加节点时自动生成序号
         /// </summary>
         /// <param name="type"></param>
         /// <returns></returns>
@@ -111,12 +115,16 @@ namespace LevelBluePrintUtil
             switch (type.Name)
             {
                 case "ScenarioNode":
-                    scenarioIndex++;
                     node = base.AddNode(type);
-                    ScenarioNode scenarioNode = (node as ScenarioNode);
-                    scenarioNode.property.scenarioId = scenarioId + scenarioIndex;
-                    scenarioNode.property.mapId = basic.mapId;
-                    //UpdateScenarioNode();
+                    if (node!=null)
+                        GenerateScenarioNodeID(node);
+                    //添加剧情节点时，自动添加剧情节点的ID和地图ID;
+                    break;
+                case "TaskNode":
+                    node = base.AddNode(type);
+                    if (node != null)
+                        GenerateTaskNodeID(node);
+                    //添加任务节点时，自动添加任务节点ID
                     break;
                 default:
                     node = base.AddNode(type);
@@ -129,6 +137,27 @@ namespace LevelBluePrintUtil
             return node;
         }
 
+        //添加剧情节点时，自动添加剧情节点的ID和地图ID;
+        public void GenerateScenarioNodeID(Node node) 
+        {
+            scenarioIndex++;
+            ScenarioNode scenarioNode = (node as ScenarioNode);
+            scenarioNode.property.scenarioId = scenarioStartId + scenarioIndex;
+            scenarioNode.property.mapId = basic.mapId;
+        }
+        public void GenerateTaskNodeID(Node node)
+        {
+            taskUniqueIDIndex++;
+            taskIDIndex++;
+            TaskNode taskNode = (node as TaskNode);
+            taskNode.property.id = taskStartId + taskUniqueIDIndex;
+            taskNode.property.taskId = taskStartId + taskIDIndex;
+            taskNode.property.relateMapId = basic.mapId;
+        }
+
+
+        //复制节点
+
         public override Node CopyNode(Node original)
         {
             genCount++;
@@ -140,11 +169,14 @@ namespace LevelBluePrintUtil
             {
                 case "ScenarioNode":
                     node = base.CopyNode(original);
-                    scenarioIndex++;
-                    ScenarioNode scenarioNode = (node as ScenarioNode);
-                    scenarioNode.property.scenarioId = scenarioId + scenarioIndex;
-                    scenarioNode.property.mapId = basic.mapId;
+                    if (node != null)
+                        GenerateScenarioNodeID(node);
                     // UpdateScenarioNode();
+                    break;
+                case "TaskNode":
+                    node = base.CopyNode(original);
+                    if (node != null)
+                        GenerateTaskNodeID(node);
                     break;
                 default:
                     node = base.CopyNode(original);
@@ -165,6 +197,7 @@ namespace LevelBluePrintUtil
             //UpdateScenarioNode();
         }
 
+        #region ExportTable
         [Button("导出Scenario_trigger表", ButtonSizes.Large)]
         public void OutputSScenario_triggerTable()
         {
@@ -244,7 +277,7 @@ namespace LevelBluePrintUtil
 
             Debug.Log("配置表导出成功！文件名：" + filePath);
         }
-
+        #endregion
 
         //[Button("ExcelReaderTest", ButtonSizes.Large)]
         //public void ExcelReaderTestButton()

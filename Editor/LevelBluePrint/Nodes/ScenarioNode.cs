@@ -40,7 +40,7 @@ namespace LevelBluePrintUtil
 		"柱子分组在pillar_group列写入")]
 		[LabelText("选择触发条件")]
 		public ScenarioTrigger scenarioTrigger;
-		[LabelText("触发的值")]
+		[LabelText("触发参数")]
 		public string configContent;
 
 		[LabelText("Lua脚本文件名")]
@@ -52,8 +52,14 @@ namespace LevelBluePrintUtil
 		[PropertySpace]
 		[PropertyOrder(1),Button("点这个按钮填入配置", ButtonSizes.Medium)]
 		public void InitTable()
-		{
-			Debug.LogWarning("触发条件没选");
+		{	
+
+			//判断字符串是否有空格
+			if(string.IsNullOrWhiteSpace("configContent"))
+            {
+				Debug.LogWarning("触发参数有空格，请重新填写");
+
+            }
             switch (scenarioTrigger)
             {
 				case ScenarioTrigger.CLOUD_UNLOCK:
@@ -101,6 +107,7 @@ namespace LevelBluePrintUtil
 					property.mapBlock = Int32.Parse(configContent);
 					break;
 				default:
+						Debug.LogWarning("未选择触发条件");
 					break;
             }
 
@@ -224,7 +231,9 @@ namespace LevelBluePrintUtil
 		{
 			base.Init();
 		}
+		
 
+		//获取上一个节点的任务ID 
 		public void GetPreNodeTriggerTaskId(TaskNode taskNode) 
 		{
 			scenarioTrigger = ScenarioTrigger.TASK_COMPLETE;
@@ -234,7 +243,7 @@ namespace LevelBluePrintUtil
 
 		}
 		
-		//自动获取上一个任务节点的内容,并填入剧情节点
+		//自动获取上一个任务节点的内容
 		public void testEntryTaskId()
         {
 			this.pre = GetPreNode();
@@ -261,8 +270,6 @@ namespace LevelBluePrintUtil
 
 			return null; // Replace this
 		}
-
-
 
 	}
 }
