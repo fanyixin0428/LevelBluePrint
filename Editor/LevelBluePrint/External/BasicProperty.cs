@@ -17,6 +17,8 @@ public class BasicProperty
     /// <summary>
     /// 名称
     /// </summary>
+    /// 
+
     [LabelText("关卡名称")]
     public string name;
 
@@ -26,6 +28,7 @@ public class BasicProperty
     [ValueDropdown("LevelType")]
     [LabelText("关卡类型")]
     public string levelType;
+    [HideInInspector]
     public List<string> LevelType = new List<string>() { "home_story", "main_story", "side_story", "event_story" };
 }
 

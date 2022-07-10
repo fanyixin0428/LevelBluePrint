@@ -284,7 +284,7 @@ namespace LevelBluePrintUtil
 			property.taskId = 0;
 			property.relateMapId = 0;
 			property.taskOrder = 0;
-			property.taskType = "event_story";
+			property.taskType = "";
 
 			property.entry = TaskEntry.COMMON;
 			property.mapGroupInfo = "{}";
@@ -296,7 +296,9 @@ namespace LevelBluePrintUtil
 
 		}
 
-		public TaskNode() : base()
+
+		//构造函数
+		TaskNode() : base()
 		{
 			property = new TaskProperty();
 			property.mergeTag = "新增";
@@ -305,7 +307,7 @@ namespace LevelBluePrintUtil
 			property.taskId = 0;
 			property.relateMapId = 0;
 			property.taskOrder = 0;
-			property.taskType = "event_story";
+			property.taskType = "";
 
 			property.entry = TaskEntry.COMMON;
 			property.mapGroupInfo = "{}";

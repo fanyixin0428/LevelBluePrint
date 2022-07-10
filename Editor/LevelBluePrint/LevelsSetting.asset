@@ -15,3 +15,9 @@ MonoBehaviour:
   basic:
     name: 
     mapId: 0
+    levelType: event_story
+    LevelType:
+    - home_story
+    - main_story
+    - side_story
+    - event_story

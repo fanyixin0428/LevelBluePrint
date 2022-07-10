@@ -33,7 +33,9 @@ namespace LevelBluePrintUtil
 
         [LabelText("任务起始ID")]
         public int taskStartId;
-
+        
+        [PropertySpace]
+        
         [HideInInspector]
         public int scenarioIndex = 0;
         [HideInInspector]
@@ -117,13 +119,13 @@ namespace LevelBluePrintUtil
                 case "ScenarioNode":
                     node = base.AddNode(type);
                     if (node!=null)
-                        GenerateScenarioNodeID(node);
+                        GenerateScenarioNode(node);
                     //添加剧情节点时，自动添加剧情节点的ID和地图ID;
                     break;
                 case "TaskNode":
                     node = base.AddNode(type);
                     if (node != null)
-                        GenerateTaskNodeID(node);
+                        GenerateTaskNode(node);
                     //添加任务节点时，自动添加任务节点ID
                     break;
                 default:
@@ -138,14 +140,14 @@ namespace LevelBluePrintUtil
         }
 
         //添加剧情节点时，自动添加剧情节点的ID和地图ID;
-        public void GenerateScenarioNodeID(Node node) 
+        public void GenerateScenarioNode(Node node) 
         {
             scenarioIndex++;
             ScenarioNode scenarioNode = (node as ScenarioNode);
             scenarioNode.property.scenarioId = scenarioStartId + scenarioIndex;
             scenarioNode.property.mapId = basic.mapId;
         }
-        public void GenerateTaskNodeID(Node node)
+        public void GenerateTaskNode(Node node)
         {
             taskUniqueIDIndex++;
             taskIDIndex++;
@@ -153,6 +155,10 @@ namespace LevelBluePrintUtil
             taskNode.property.id = taskStartId + taskUniqueIDIndex;
             taskNode.property.taskId = taskStartId + taskIDIndex;
             taskNode.property.relateMapId = basic.mapId;
+            taskNode.property.taskType = basic.levelType;
+            taskNode.property.lcName = string.Concat("LC_TASK", taskNode.property.taskType, "_", taskNode.property.taskId, "_name");
+            taskNode.property.lcDetail = string.Concat("LC_TASK", taskNode.property.taskType, "_", taskNode.property.taskId, "_desc");
+            
         }
 
 
@@ -170,13 +176,13 @@ namespace LevelBluePrintUtil
                 case "ScenarioNode":
                     node = base.CopyNode(original);
                     if (node != null)
-                        GenerateScenarioNodeID(node);
+                        GenerateScenarioNode(node);
                     // UpdateScenarioNode();
                     break;
                 case "TaskNode":
                     node = base.CopyNode(original);
                     if (node != null)
-                        GenerateTaskNodeID(node);
+                        GenerateTaskNode(node);
                     break;
                 default:
                     node = base.CopyNode(original);
