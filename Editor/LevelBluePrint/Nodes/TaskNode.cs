@@ -137,6 +137,10 @@ namespace LevelBluePrintUtil
 			[LabelText("22.工具单goto")] order_tool
 		}
 
+
+
+
+
         [PropertySpace]
 		[LabelText("1.任务触发条件")]
 		[TableList]
@@ -228,9 +232,42 @@ namespace LevelBluePrintUtil
 			public int map_id;
 		}
 
+		[ValueDropdown("ItemName")]
+		public string itemName;
+		public static List<string> ItemName = new List<string>();
 
+		[Button("尝试创建一个动态的下拉菜单", ButtonSizes.Medium)]
+		public void LoadExampleAsset()
+		{
+			var exampleAsset =
+			AssetDatabase.LoadAssetAtPath<Sheet2>
+									   ("Assets/sheet2.asset");
 
+            for (int i = 0; i < exampleAsset.dataList.Count; i++)
+            {
+                string comment = exampleAsset.dataList[i].Comment;
+				ItemName.Add(comment);
+				ItemReward.ItemRewardName.Add(comment);
+            }
+			
 
+		}
+
+		[ValueDropdown("TreeViewOfInts", ExpandAllMenuItems = true)]
+		public List<int> TreeViewOfInts = new List<int>() { 1, 2, 7 };
+
+		[TableList]
+		public List<ItemReward> itemRewardList = new List<ItemReward>();
+		[Serializable]
+		public class ItemReward
+		{
+			[ValueDropdown("ItemRewardName")]
+			public string itemRwardName;
+			public int num;
+
+            [HideInInspector]
+			public static List<string> ItemRewardName = new List<string>();
+		}
 
 		/// <summary>
 		/// 可能不是必须的一些属性

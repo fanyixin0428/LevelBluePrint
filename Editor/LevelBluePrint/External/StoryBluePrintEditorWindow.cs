@@ -31,6 +31,7 @@ namespace LevelBluePrintUtil
             tree.DefaultMenuStyle.IconSize = 28.00f;
             tree.Config.DrawSearchToolbar = true;
             tree.MenuItems.Add(new OdinMenuItem(tree, "关卡", LevelsSetting.Instance));
+            tree.MenuItems.Add(new OdinMenuItem(tree, "录入新道具", CreateNewProperty.Instance));
             tree.AddAllAssetsAtPath("关卡/", "Editor/LevelBluePrint/Data", typeof(LevelGraph), true);
 
             tree.Selection.SelectionChanged += switchSetting;

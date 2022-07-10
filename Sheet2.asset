@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03dcc41eb0c03bc42a51f4bf509de504, type: 3}
+  m_Name: Sheet2
+  m_EditorClassIdentifier: 
+  SheetName: Assets/ExcelTest.xlsx
+  WorksheetName: Sheet2
+  dataArray:
+  - id: 10000531
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u80E1\u841D\u535C\u94A5\u5319"
+    csgen: '["default0"]'
+    itemname: carrot_key
+  - id: 10000532
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u80E1\u841D\u535C\u5956\u724C"
+    csgen: '["default0"]'
+    itemname: carrot_medal
+  - id: 10000533
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u5E03\u6599"
+    csgen: '["default0"]'
+    itemname: cloth
+  - id: 10000534
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u725B\u5976"
+    csgen: '["default0"]'
+    itemname: milk
+  - id: 10000535
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u70B8\u725B\u5976"
+    csgen: '["default0"]'
+    itemname: fried_milk
+  - id: 10000536
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u9C9C\u82B1\u6C34\u58F6"
+    csgen: '["default0"]'
+    itemname: flower_kettle
+  - id: 10000537
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u5F13\u7BAD"
+    csgen: '["default0"]'
+    itemname: bow_and _arrow
+  - id: 10000538
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u6E05\u6C34"
+    csgen: '["default0"]'
+    itemname: shimizu_02
+  - id: 10000539
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u7CD6\u679C"
+    csgen: '["default0"]'
+    itemname: candy
+  - id: 10000540
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u4E4C\u9F9F\u9975"
+    csgen: '["default0"]'
+    itemname: turtle_bait
+  - id: 10000541
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u56ED\u827A\u526A\u5200"
+    csgen: '["default0"]'
+    itemname: gardening_scissors
+  - id: 10000542
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u62FC\u56FE"
+    csgen: '["default0"]'
+    itemname: jigsaw
+  - id: 10000543
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u989C\u6599\u6876"
+    csgen: '["default0"]'
+    itemname: paint_bucket
+  dataList:
+  - id: 10000531
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u80E1\u841D\u535C\u94A5\u5319"
+    csgen: '["default0"]'
+    itemname: carrot_key
+  - id: 10000532
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u80E1\u841D\u535C\u5956\u724C"
+    csgen: '["default0"]'
+    itemname: carrot_medal
+  - id: 10000533
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u5E03\u6599"
+    csgen: '["default0"]'
+    itemname: cloth
+  - id: 10000534
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u725B\u5976"
+    csgen: '["default0"]'
+    itemname: milk
+  - id: 10000535
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u70B8\u725B\u5976"
+    csgen: '["default0"]'
+    itemname: fried_milk
+  - id: 10000536
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u9C9C\u82B1\u6C34\u58F6"
+    csgen: '["default0"]'
+    itemname: flower_kettle
+  - id: 10000537
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u5F13\u7BAD"
+    csgen: '["default0"]'
+    itemname: bow_and _arrow
+  - id: 10000538
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u6E05\u6C34"
+    csgen: '["default0"]'
+    itemname: shimizu_02
+  - id: 10000539
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u7CD6\u679C"
+    csgen: '["default0"]'
+    itemname: candy
+  - id: 10000540
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u4E4C\u9F9F\u9975"
+    csgen: '["default0"]'
+    itemname: turtle_bait
+  - id: 10000541
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u56ED\u827A\u526A\u5200"
+    csgen: '["default0"]'
+    itemname: gardening_scissors
+  - id: 10000542
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u62FC\u56FE"
+    csgen: '["default0"]'
+    itemname: jigsaw
+  - id: 10000543
+    tag: "\u65B0\u589E"
+    comment: "\u590F\u4EE4\u8425-\u989C\u6599\u6876"
+    csgen: '["default0"]'
+    itemname: paint_bucket

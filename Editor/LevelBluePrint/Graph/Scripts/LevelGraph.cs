@@ -122,10 +122,10 @@ namespace LevelBluePrintUtil
                     node = base.AddNode(type);
                     break;
             }
-           
+
 
             UpdateData();
-            
+
             return node;
         }
 
@@ -134,7 +134,7 @@ namespace LevelBluePrintUtil
             genCount++;
             Node node = null;
             var type = original.GetType();
-            
+
             // 设置 index
             switch (type.Name)
             {
@@ -166,10 +166,10 @@ namespace LevelBluePrintUtil
         }
 
         [Button("导出Scenario_trigger表", ButtonSizes.Large)]
-        public void OutputSScenario_triggerTable() 
+        public void OutputSScenario_triggerTable()
         {
-           
-            string filePath = "Assets/Editor/LevelBluePrint/Excel/" +basic.name+ "Scenario_trigger" + DateTime.Now.ToString("HH-mm-ss--dd-MM-yyyy") + ".xlsx";
+
+            string filePath = "Assets/Editor/LevelBluePrint/Excel/" + basic.name + "Scenario_trigger" + DateTime.Now.ToString("HH-mm-ss--dd-MM-yyyy") + ".xlsx";
 
             //因为文件不存在，所以取不到Excel信息
             FileInfo fileInfo = new FileInfo(filePath);
@@ -236,7 +236,7 @@ namespace LevelBluePrintUtil
                     }
 
                 }
-      
+
                 excelPackage.Save();
                 //取得表中第一行第一列中的数据
 
@@ -245,5 +245,21 @@ namespace LevelBluePrintUtil
             Debug.Log("配置表导出成功！文件名：" + filePath);
         }
 
+
+        //[Button("ExcelReaderTest", ButtonSizes.Large)]
+        //public void ExcelReaderTestButton()
+        //{
+        //    ExcelReadWrite excelReadWrite = new ExcelReadWrite();
+        //    excelReadWrite.testExcelReadWrite();
+        //}
+        [Button("TestLoadScriptableObjectAssets", ButtonSizes.Large)]
+        public void LoadExampleAsset()
+        {
+            var exampleAsset =
+            AssetDatabase.LoadAssetAtPath<Sheet2>
+                                       ("Assets/sheet2.asset");
+            Debug.Log(exampleAsset.dataList[1].Id);
+
+        }
     }
 }

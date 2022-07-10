@@ -17,204 +17,6 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: -6877663109259099870}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: ports
-      Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[XNode.NodePort,
-        XNode]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: pre
-    - Name: $v
-      Entry: 7
-      Data: 2|XNode.NodePort, XNode
-    - Name: _fieldName
-      Entry: 1
-      Data: pre
-    - Name: _node
-      Entry: 10
-      Data: 0
-    - Name: _typeQualifiedName
-      Entry: 1
-      Data: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    - Name: connections
-      Entry: 7
-      Data: 3|System.Collections.Generic.List`1[[XNode.NodePort+PortConnection, XNode]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _direction
-      Entry: 3
-      Data: 0
-    - Name: _connectionType
-      Entry: 3
-      Data: 1
-    - Name: _typeConstraint
-      Entry: 3
-      Data: 0
-    - Name: _dynamic
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: next
-    - Name: $v
-      Entry: 7
-      Data: 4|XNode.NodePort, XNode
-    - Name: _fieldName
-      Entry: 1
-      Data: next
-    - Name: _node
-      Entry: 10
-      Data: 0
-    - Name: _typeQualifiedName
-      Entry: 1
-      Data: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    - Name: connections
-      Entry: 7
-      Data: 5|System.Collections.Generic.List`1[[XNode.NodePort+PortConnection, XNode]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _direction
-      Entry: 3
-      Data: 1
-    - Name: _connectionType
-      Entry: 3
-      Data: 0
-    - Name: _typeConstraint
-      Entry: 3
-      Data: 0
-    - Name: _dynamic
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-  graph: {fileID: 11400000}
-  position: {x: -616, y: -792}
-  pre: {fileID: 0}
-  next: {fileID: 0}
-  index: 7
-  Comment: 
-  taskTriggerCondition:
-  - id: 0
-    key: 0
-    obj_id: 111
-  taskCompleteComdition:
-  - index: 0
-    id: 0
-    type: 0
-    obj_id: 0
-    count: 0
-    mapid: 0
-  gotoCompass:
-  - type: 0
-    obj_id: 0
-    map_id: 0
-  coordinateGoto: []
-  levelGoto: []
-  localizationGoto: []
-  orderToolGoto: []
-  basic:
-    name: 
-    mapId: 0
-  property:
-    taskComment: 
-    mergeTag: 
-    csgen: 
-    id: 0
-    taskId: 0
-    relateMapId: 0
-    taskOrder: 0
-    taskType: 
-    lcName: 
-    lcDetail: 
-    entry: 0
-    issuer: 0
-    triggerConditionDescription: 
-    startCondition: 
-    taskTargetDescription: 
-    taskTarget: 
-    gotoDescription: 
-    gotoCompass: 
-    isCompletePerTask: 0
-    targetNumber: 0
-    targetLcDetail: 
-    targetIconDescription: 
-    targetIconAddress: 
-    targetIconType: 
-    rewardDescription: 
-    reward: 
-    isInvisible: 0
-    mapGroupInfo: 
-    giftBuilding: 
-    giftBuildingIcon: 
---- !u!114 &-5570454474443625314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3721c7408d3f11640b0cf19876b9c3f8, type: 3}
-  m_Name: Start
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects:
     - {fileID: -5570454474443625314}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -259,7 +61,32 @@ MonoBehaviour:
         mscorlib
     - Name: 
       Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 4|XNode.NodePort+PortConnection, XNode
+    - Name: fieldName
+      Entry: 1
+      Data: next
+    - Name: node
+      Entry: 10
+      Data: 1
+    - Name: reroutePoints
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[UnityEngine.Vector2, UnityEngine.CoreModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
       Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -292,7 +119,7 @@ MonoBehaviour:
       Data: next
     - Name: $v
       Entry: 7
-      Data: 4|XNode.NodePort, XNode
+      Data: 6|XNode.NodePort, XNode
     - Name: _fieldName
       Entry: 1
       Data: next
@@ -304,7 +131,7 @@ MonoBehaviour:
       Data: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     - Name: connections
       Entry: 7
-      Data: 5|System.Collections.Generic.List`1[[XNode.NodePort+PortConnection, XNode]],
+      Data: 7|System.Collections.Generic.List`1[[XNode.NodePort+PortConnection, XNode]],
         mscorlib
     - Name: 
       Entry: 12
@@ -340,15 +167,80 @@ MonoBehaviour:
       Entry: 8
       Data: 
   graph: {fileID: 11400000}
-  position: {x: -1048, y: -648}
+  position: {x: -1304, y: -888}
   pre: {fileID: 0}
   next: {fileID: 0}
-  index: 1
-  levelName: "\u6211\u662F\u4E2A\u65B0\u5173\u5361"
-  levelId: 100000
-  scenarioId: 1000
-  taskId: 10000
---- !u!114 &-5223139909606336009
+  index: 6
+  Comment: 
+  taskTriggerCondition:
+  - id: 1
+    key: 0
+    obj_id: 111
+  taskCompleteComdition:
+  - index: 1
+    id: 1
+    type: 0
+    obj_id: 10086
+    count: 3
+    mapid: 10000
+  - index: 0
+    id: 0
+    type: 0
+    obj_id: 0
+    count: 0
+    mapid: 0
+  gotoCompass:
+  - type: 0
+    obj_id: 0
+    map_id: 0
+  coordinateGoto: []
+  levelGoto: []
+  localizationGoto: []
+  orderToolGoto: []
+  itemName: "\u590F\u4EE4\u8425-\u725B\u5976"
+  TreeViewOfInts: 010000000200000007000000
+  itemRewardList:
+  - itemRwardName: "\u590F\u4EE4\u8425-\u80E1\u841D\u535C\u5956\u724C"
+    num: 3
+  - itemRwardName: "\u590F\u4EE4\u8425-\u725B\u5976"
+    num: 4
+  - itemRwardName: 
+    num: 100
+  basic:
+    name: 
+    mapId: 0
+  property:
+    taskComment: 
+    mergeTag: "\u65B0\u589E"
+    csgen: '["default"]'
+    id: 0
+    taskId: 0
+    relateMapId: 0
+    taskOrder: 0
+    taskType: event_story
+    lcName: 
+    lcDetail: 
+    entry: 1
+    issuer: 0
+    triggerConditionDescription: 
+    startCondition: 
+    taskTargetDescription: 
+    taskTarget: 
+    gotoDescription: 
+    gotoCompass: 
+    isCompletePerTask: 0
+    targetNumber: 0
+    targetLcDetail: 
+    targetIconDescription: 
+    targetIconAddress: 
+    targetIconType: '[]'
+    rewardDescription: 
+    reward: 
+    isInvisible: 0
+    mapGroupInfo: '{}'
+    giftBuilding: '[]'
+    giftBuildingIcon: '[]'
+--- !u!114 &-5570454474443625314
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -357,15 +249,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ab57a578695ca2479b95980e9f254aa, type: 3}
-  m_Name: Scenario
+  m_Script: {fileID: 11500000, guid: 3721c7408d3f11640b0cf19876b9c3f8, type: 3}
+  m_Name: Start
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: -5223139909606336009}
-    - {fileID: -3465068979367926387}
+    - {fileID: -5570454474443625314}
+    - {fileID: -6877663109259099870}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -515,7 +407,156 @@ MonoBehaviour:
       Entry: 8
       Data: 
   graph: {fileID: 11400000}
-  position: {x: 632, y: -552}
+  position: {x: -1608, y: -888}
+  pre: {fileID: 0}
+  next: {fileID: 0}
+  index: 1
+  levelName: "\u6211\u662F\u4E2A\u65B0\u5173\u5361"
+  levelId: 100000
+  scenarioId: 1000
+  taskId: 10000
+--- !u!114 &-5223139909606336009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab57a578695ca2479b95980e9f254aa, type: 3}
+  m_Name: Scenario
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: -5223139909606336009}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: ports
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[XNode.NodePort,
+        XNode]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: pre
+    - Name: $v
+      Entry: 7
+      Data: 2|XNode.NodePort, XNode
+    - Name: _fieldName
+      Entry: 1
+      Data: pre
+    - Name: _node
+      Entry: 10
+      Data: 0
+    - Name: _typeQualifiedName
+      Entry: 1
+      Data: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    - Name: connections
+      Entry: 7
+      Data: 3|System.Collections.Generic.List`1[[XNode.NodePort+PortConnection, XNode]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _direction
+      Entry: 3
+      Data: 0
+    - Name: _connectionType
+      Entry: 3
+      Data: 1
+    - Name: _typeConstraint
+      Entry: 3
+      Data: 0
+    - Name: _dynamic
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: next
+    - Name: $v
+      Entry: 7
+      Data: 4|XNode.NodePort, XNode
+    - Name: _fieldName
+      Entry: 1
+      Data: next
+    - Name: _node
+      Entry: 10
+      Data: 0
+    - Name: _typeQualifiedName
+      Entry: 1
+      Data: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    - Name: connections
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[XNode.NodePort+PortConnection, XNode]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _direction
+      Entry: 3
+      Data: 1
+    - Name: _connectionType
+      Entry: 3
+      Data: 0
+    - Name: _typeConstraint
+      Entry: 3
+      Data: 0
+    - Name: _dynamic
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  graph: {fileID: 11400000}
+  position: {x: -360, y: -840}
   pre: {fileID: 0}
   next: {fileID: 0}
   index: 3
@@ -687,14 +728,14 @@ MonoBehaviour:
       Entry: 8
       Data: 
   graph: {fileID: 11400000}
-  position: {x: 152, y: -776}
+  position: {x: -24, y: -840}
   pre: {fileID: 0}
   next: {fileID: 0}
-  index: 6
+  index: 5
   nodeScenarioIndex: 0
   nodeScenarioBrief: 
   nodeMultTex: 
-  scenarioTrigger: 0
+  scenarioTrigger: 1
   configContent: 
   luaFileName: 
   memoContent: 
@@ -735,7 +776,6 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: -3465068979367926387}
-    - {fileID: -5223139909606336009}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -755,203 +795,6 @@ MonoBehaviour:
     - Name: 
       Entry: 12
       Data: 2
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: pre
-    - Name: $v
-      Entry: 7
-      Data: 2|XNode.NodePort, XNode
-    - Name: _fieldName
-      Entry: 1
-      Data: pre
-    - Name: _node
-      Entry: 10
-      Data: 0
-    - Name: _typeQualifiedName
-      Entry: 1
-      Data: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    - Name: connections
-      Entry: 7
-      Data: 3|System.Collections.Generic.List`1[[XNode.NodePort+PortConnection, XNode]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 4|XNode.NodePort+PortConnection, XNode
-    - Name: fieldName
-      Entry: 1
-      Data: next
-    - Name: node
-      Entry: 10
-      Data: 1
-    - Name: reroutePoints
-      Entry: 7
-      Data: 5|System.Collections.Generic.List`1[[UnityEngine.Vector2, UnityEngine.CoreModule]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _direction
-      Entry: 3
-      Data: 0
-    - Name: _connectionType
-      Entry: 3
-      Data: 1
-    - Name: _typeConstraint
-      Entry: 3
-      Data: 0
-    - Name: _dynamic
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: next
-    - Name: $v
-      Entry: 7
-      Data: 6|XNode.NodePort, XNode
-    - Name: _fieldName
-      Entry: 1
-      Data: next
-    - Name: _node
-      Entry: 10
-      Data: 0
-    - Name: _typeQualifiedName
-      Entry: 1
-      Data: XNode.Node, XNode, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    - Name: connections
-      Entry: 7
-      Data: 7|System.Collections.Generic.List`1[[XNode.NodePort+PortConnection, XNode]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _direction
-      Entry: 3
-      Data: 1
-    - Name: _connectionType
-      Entry: 3
-      Data: 0
-    - Name: _typeConstraint
-      Entry: 3
-      Data: 0
-    - Name: _dynamic
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-  graph: {fileID: 11400000}
-  position: {x: 856, y: -552}
-  pre: {fileID: -5223139909606336009}
-  next: {fileID: 0}
-  index: 4
-  nodeScenarioIndex: 12
-  nodeScenarioBrief: "\u5927\u81F4\u7684\u5267\u60C5\u662F\u5565"
-  nodeMultTex: "\u5927\u81F4\u7684\u5267\u60C5\u662F\u5565"
-  scenarioTrigger: 2
-  configContent: 111111
-  luaFileName: 123.lua
-  memoContent: "\u8FD9\u662F\u4EC0\u4E48\u5267\u60C5"
-  property:
-    comment: "\u5927\u81F4\u7684\u5267\u60C5\u662F\u5565"
-    mergeTag: "\u65B0\u589E"
-    scenarioId: 1003
-    mapId: 100000
-    luaFile: 123.lua
-    triggerType: 2
-    cloudMapId: -99999
-    cloudId: -99999
-    taskId: 111111
-    taskStage: -99999
-    mapFirstEntryId: -99999
-    levelReach: -99999
-    blockInvisible: '[]'
-    cloudUnlockJsonArray: '[]'
-    item: '[]'
-    triggerFlag: -99999
-    pillarGroup: -99999
-    mapBlock: -99999
-    buildingId: -99999
---- !u!114 &-565983741566265801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13dde94bd07a39c4caafe7b524298560, type: 3}
-  m_Name: Task Trigger Condition
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: -565983741566265801}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: ports
-      Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[XNode.NodePort,
-        XNode]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 3
     - Name: 
       Entry: 7
       Data: 
@@ -1051,73 +894,43 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: options 0
-    - Name: $v
-      Entry: 7
-      Data: 6|XNode.NodePort, XNode
-    - Name: _fieldName
-      Entry: 1
-      Data: options 0
-    - Name: _node
-      Entry: 10
-      Data: 0
-    - Name: _typeQualifiedName
-      Entry: 1
-      Data: LevelBluePrintUtil.TaskTriggerConditionData, Assembly-CSharp-Editor,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    - Name: connections
-      Entry: 7
-      Data: 7|System.Collections.Generic.List`1[[XNode.NodePort+PortConnection, XNode]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _direction
-      Entry: 3
-      Data: 1
-    - Name: _connectionType
-      Entry: 3
-      Data: 1
-    - Name: _typeConstraint
-      Entry: 3
-      Data: 0
-    - Name: _dynamic
-      Entry: 5
-      Data: true
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
       Entry: 13
       Data: 
     - Name: 
       Entry: 8
       Data: 
   graph: {fileID: 11400000}
-  position: {x: -1128, y: 312}
-  pre: {fileID: 0}
+  position: {x: 632, y: -824}
+  pre: {fileID: -5223139909606336009}
   next: {fileID: 0}
-  index: 5
-  options:
-  - id: 0
-    key: 0
-    obj_id: 
-  - id: 0
-    key: 1
-    obj_id: 
+  index: 4
+  nodeScenarioIndex: 12
+  nodeScenarioBrief: "\u5927\u81F4\u7684\u5267\u60C5\u662F\u5565"
+  nodeMultTex: "\u5927\u81F4\u7684\u5267\u60C5\u662F\u5565"
+  scenarioTrigger: 2
+  configContent: 111111
+  luaFileName: 123.lua
+  memoContent: "\u8FD9\u662F\u4EC0\u4E48\u5267\u60C5"
+  property:
+    comment: "\u5927\u81F4\u7684\u5267\u60C5\u662F\u5565"
+    mergeTag: "\u65B0\u589E"
+    scenarioId: 1003
+    mapId: 100000
+    luaFile: 123.lua
+    triggerType: 2
+    cloudMapId: -99999
+    cloudId: -99999
+    taskId: 111111
+    taskStage: -99999
+    mapFirstEntryId: -99999
+    levelReach: -99999
+    blockInvisible: '[]'
+    cloudUnlockJsonArray: '[]'
+    item: '[]'
+    triggerFlag: -99999
+    pillarGroup: -99999
+    mapBlock: -99999
+    buildingId: -99999
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1144,7 +957,6 @@ MonoBehaviour:
   - {fileID: 6260460498429907633}
   - {fileID: -5223139909606336009}
   - {fileID: -3465068979367926387}
-  - {fileID: -565983741566265801}
   - {fileID: -4709061563027915199}
   - {fileID: -6877663109259099870}
   basic:
@@ -1296,7 +1108,7 @@ MonoBehaviour:
       Entry: 8
       Data: 
   graph: {fileID: 11400000}
-  position: {x: 1144, y: -360}
+  position: {x: 1032, y: -808}
   pre: {fileID: 0}
   next: {fileID: 0}
   index: 2
